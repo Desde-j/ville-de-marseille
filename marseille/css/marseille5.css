@@ -1,0 +1,72 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+
+
+                    /* Tableau accordéon */
+
+.cadre-ex1{
+    margin: 7rem auto;	
+    overflow: hidden;
+    display: grid;
+    
+}
+
+.cadre-ex1 .accordeon1{
+
+    display:grid;
+    grid-template-columns: 7fr 0;
+
+}
+    
+.cadre-ex1 label{
+
+    height: 80%;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    writing-mode: sideways-lr;
+    background-color:tan;
+    padding: .5rem
+    
+}	
+
+.cadre-ex1 input:checked ~ .accordeon1 label,	
+.cadre-ex1 label:hover{
+    
+    filter: saturate(260%)
+    
+}
+
+.nav1 ul{
+    
+    list-style-type: none;
+    place-items: center;
+    background-color: white;
+     
+    font-family:Georgia, 'Times New Roman', Times, serif;   
+}   
+
+    
+.cadre-accordeon1 input:checked ~  .accordeon1 {
+
+    grid-template-columns: 1fr calc(100vw/5);
+
+}	
+
+                    /* Responsive */
+
+
+@media screen and (max-width: 1200px) {
+
+     .accordeon1{
+         font-style: normal;
+         font-size: 1.2em;
+         
+     }
+}
+
+
